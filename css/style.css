@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -792,6 +793,12 @@ header div.buttons a:last-child:hover {
 .blog .blog-stories div p:nth-child(3) {
   font-size: 1.2rem;
   color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .blog .blog-stories div p:nth-child(3) {
+    max-width: 300px;
+  }
 }
 
 .blog .container .blog-btn {
